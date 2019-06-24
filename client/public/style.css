@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.Header{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.Looking{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+a{
+    margin-left:20px;
+}
+
+.pettable{
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 400px;
+}
+
+.pettable th{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.pettable td{
+    padding: 10px;
+    text-align: center;
+}
+
+.pettable td button{
+    padding:5px;
+}
+
+.form-group{
+    margin:15px;
+}
+
+.petSubmit{
+    padding:5px;
+    margin-left:15px;
+}
+
+.DisplayPet{
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+.cancel{
+    padding:5px;
+}
+
+.warning{
+    background: red;
+    width: 250px;
+}
