@@ -13,7 +13,7 @@ class View extends Component {
 
     componentDidMount = () => {
         console.log(this.props.match.params._id);
-        axios.get(`http://localhost:8000/api/pets/${this.props.match.params._id}`)
+        axios.get(`/api/pets/${this.props.match.params._id}`)
             .then(res => {
                 this.setState({pet: res.data.pet});
             })
@@ -24,7 +24,7 @@ class View extends Component {
 
     
     delete = () => {
-        axios.delete(`http://localhost:8000/api/pets/${this.props.match.params._id}`)
+        axios.delete(`/api/pets/${this.props.match.params._id}`)
           .then( res => {
             this.props.history.push('/');
           })
@@ -38,7 +38,7 @@ class View extends Component {
         p.pet.likes += 1;
         p.isLiked = true;
         this.setState(p);
-        axios.put(`http://localhost:8000/api/pets/${this.props.match.params._id}`, this.state.pet)
+        axios.put(`/api/pets/${this.props.match.params._id}`, this.state.pet)
         .then( res => {
             this.componentDidMount();
         })

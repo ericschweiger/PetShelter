@@ -29,7 +29,7 @@ class New extends Component {
     addPet = (e) => {
         e.preventDefault();
         console.log(this.state);
-        axios.post("http://localhost:8000/api/pets", this.state.newPet)
+        axios.post("/api/pets", this.state.newPet)
             .then(res => {
                 if(res.data.errors){
                     console.log(res.data.errors);
